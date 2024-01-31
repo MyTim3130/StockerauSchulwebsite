@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "termine_events",
+  "info": {
+    "singularName": "termine-event",
+    "pluralName": "termine-events",
+    "displayName": "Termine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Von": {
+      "type": "date",
+      "required": true
+    },
+    "Bis": {
+      "required": false,
+      "type": "date"
+    },
+    "Uhrzeit": {
+      "type": "text"
+    }
+  }
+}

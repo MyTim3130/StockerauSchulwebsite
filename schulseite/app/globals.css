@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .heroClipPath{
+ 
+        clip-path: polygon(0% 38.89%, 0% 0%, 100% 0%, 100% 62.96%);
+        
+
+        
+ 
+    }
+ 
+ }
+
+ body{
+    overflow-x: hidden;
+ }

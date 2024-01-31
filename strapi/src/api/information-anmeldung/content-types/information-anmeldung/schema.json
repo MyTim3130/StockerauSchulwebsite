@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "information_anmeldungen",
+  "info": {
+    "singularName": "information-anmeldung",
+    "pluralName": "information-anmeldungen",
+    "displayName": "InformationAnmeldung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "required": true
+    },
+    "Beschreibung": {
+      "type": "text"
+    }
+  }
+}
