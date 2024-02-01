@@ -7,10 +7,6 @@
     .heroClipPath{
  
         clip-path: polygon(0% 38.89%, 0% 0%, 100% 0%, 100% 62.96%);
-        
-
-        
- 
     }
  
  }
@@ -22,3 +18,4 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
  }
+
