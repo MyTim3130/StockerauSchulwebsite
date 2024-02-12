@@ -13,6 +13,7 @@
 
  body{
     overflow-x: hidden;
+    color: black
  }
  .paddingFix > div{
     padding-top: 0 !important;

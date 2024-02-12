@@ -4,7 +4,6 @@ import axios from "axios";
 import { STRAPI_URL } from "@/globaleVariablen";
 import DownloadButton from "./DownloadButton";
 import BeitragKarte from "./BeitragKarte";
-import NavBar from "./NavBar";
 import Iframe from 'react-iframe'
 
 /* Interface für Informations Strapi Komponenten */
@@ -83,7 +82,6 @@ export default async function Hero() {
 
   return (
     <>
-      <NavBar></NavBar>
 
       <div className="h-fit w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] absolute z-[-20] flex items-center justify-center flex-col">
         <section className="h-fit w-screen bg-dotted-spacing-4 bg-dotted-gray-200">
@@ -93,7 +91,7 @@ export default async function Hero() {
            
           />
           <div className="sm:h-[35vw] h-[55vh]"></div>
-          <div className="sm:w-2/6 sm:ml-24 w-4/6 ml-4 sm:mt-56 xl:mt-0">
+          <div className="w-5/6 sm:w-2/6 sm:ml-24 ml-4 sm:mt-56 xl:mt-0">
             <h1 className="text-4xl mb-5">BG Stockerau</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
