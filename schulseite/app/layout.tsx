@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ScrollSmooth>
+        {/* <ScrollSmooth> */}
         <NavBar></NavBar>
 
         {children}
-        </ScrollSmooth>
+        {/* </ScrollSmooth> */}
       </body>
     </html>
   );

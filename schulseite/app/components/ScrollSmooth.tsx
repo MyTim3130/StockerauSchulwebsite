@@ -1,28 +1,28 @@
 'use client'
 import React, { useEffect } from 'react'
-// import gsap from 'gsap'
-// import {ScrollSmoother} from 'gsap/ScrollSmoother'
+import gsap from 'gsap'
+import {ScrollSmoother} from 'gsap/ScrollSmoother'
 
 
-// gsap.registerPlugin(ScrollSmoother)
+gsap.registerPlugin(ScrollSmoother)
 
 
 
 
 const ScrollSmooth = ({children}:{children:React.ReactNode}) => {
-    // useEffect(()=>{
-    //     ScrollSmoother.create({
-    //         smooth: 1,
-    //         effects: true,
-    //       });
-    //  },[])
+    useEffect(()=>{
+        ScrollSmoother.create({
+            smooth: 1,
+            effects: true,
+          });
+     },[])
   return (
     <>
-    {/* <div id="smooth-wrapper">
-  <div id="smooth-content"> */}
+    <div id="smooth-wrapper">
+  <div id="smooth-content">
    {children}
-  {/* </div>
-</div> */}
+  </div>
+</div>
   </>
   )
 }

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
 import { STRAPI_URL } from "@/globaleVariablen";
 import DownloadButton from "./DownloadButton";
 import BeitragKarte from "./BeitragKarte";
-import Iframe from 'react-iframe'
+import Iframe from "react-iframe";
+import HeroImage from "./HeroImage";
 
 /* Interface für Informations Strapi Komponenten */
 
@@ -80,16 +81,13 @@ export default async function Hero() {
   const response4 = await axios.get("http://localhost:1337/api/termine-events");
   /* console.log(response4.data.data); */
 
+
+
   return (
     <>
-
-      <div className="h-fit w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] absolute z-[-20] flex items-center justify-center flex-col">
+      <div className="h-fit w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.1] absolute z-[-20] flex items-center justify-center flex-col">
         <section className="h-fit w-screen bg-dotted-spacing-4 bg-dotted-gray-200">
-          <div
-            className="h-screen w-screen heroClipPath absolute -z-10 bg-mobile-header md:bg-desktop-header sm:bg-contain xl:bg-cover bg-contain"
-            id="heroImage"
-           
-          />
+         <HeroImage />
           <div className="sm:h-[35vw] h-[55vh]"></div>
           <div className="w-5/6 sm:w-2/6 sm:ml-24 ml-4 sm:mt-56 xl:mt-0">
             <h1 className="text-4xl mb-5">BG Stockerau</h1>
@@ -104,16 +102,18 @@ export default async function Hero() {
               cumque!
             </p>
           </div>
-          <div className="w-[screen] h-96 flex justify-center items-center mt-24" id="scrollTriggerNav">
-          <Iframe url="https://www.youtube.com/embed/w50VVpHyACA"
-        id=""
-        className="w-96 h-60 md:w-[48rem] md:h-96 rounded-2xl"
-        display="block"
-        position="relative"
-       />
+          <div
+            className="w-[screen] h-96 flex justify-center items-center mt-24"
+            id="scrollTriggerNav"
+          >
+            <Iframe
+              url="https://www.youtube.com/embed/w50VVpHyACA"
+              id=""
+              className="w-96 h-60 md:w-[48rem] md:h-96 rounded-2xl"
+              display="block"
+              position="relative"
+            />
           </div>
-
-
 
           <section className="flex flex-col items-center mt-11">
             <div className="flex justify-around items-center w-screen">
@@ -246,7 +246,6 @@ export default async function Hero() {
               height={1000}
               width={1000}
               alt="missing Image"
-              
             ></Image>
             <Image
               className="h-60 w-auto object-scale-down"
