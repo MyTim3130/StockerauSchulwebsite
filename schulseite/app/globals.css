@@ -6,7 +6,7 @@
 
     .heroClipPath{
  
-        clip-path: polygon(0% 38.89%, 0% 0%, 100% 0%, 100% 62.96%);
+        clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 70%);
     }
  
  }
@@ -20,3 +20,16 @@
     padding-bottom: 0 !important;
  }
 
+ @media screen and (max-width: 992px) {
+   .heroClipPath{
+ 
+      clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%);
+  }
+ }
+
+ @media screen and (max-width: 850px) {
+   .heroClipPath{
+ 
+      clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 50%);
+  }
+ }

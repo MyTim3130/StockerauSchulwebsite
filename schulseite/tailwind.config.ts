@@ -35,7 +35,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         "mobile-header": "url('/images/schuleHeroMobile.jpg')",
-        "desktop-header": "url('/images/schuleHero.jpg')",
+        "desktop-header": "url('/images/schuleHero4.jpg')",
         // Include additional theme customizations from the first code block here if needed
       },
      

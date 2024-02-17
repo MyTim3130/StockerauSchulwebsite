@@ -32,9 +32,9 @@ if (Object.keys(response3).length == 0){
 
   return (
   
-    <div className="sm:grid grid-cols-2 w-[80vw] paddingFix">
+    <div className="sm:grid grid-cols-3 w-[80vw] paddingFix mb-28">
     {response3.data.data
-      .slice(-4)
+      .slice(-3)
       .map((data: BeitragsData, index: number) => {
         /* console.log(data.attributes.Titel) */
         /* console.log(data.attributes.Cover) */
@@ -43,7 +43,7 @@ if (Object.keys(response3).length == 0){
           <CardBody className="flex flex-col items-center mt-12 sm:mb-10">
             <CardItem className="flex items-center flex-col w-fit">
               <img
-                className="sm:h-52 lg:h-72 xl:h-96 rounded-md h-52 object-cover"
+                className="sm:h-52 lg:h-72 xl:h-96 rounded-md h-52 object-cover shadow-md"
                 src={
                   STRAPI_URL + data.attributes.Cover.data.attributes.url
                 }

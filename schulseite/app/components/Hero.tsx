@@ -6,6 +6,7 @@ import DownloadButton from "./DownloadButton";
 import BeitragKarte from "./BeitragKarte";
 import Iframe from "react-iframe";
 import HeroImage from "./HeroImage";
+import Footer from "./Footer";
 
 /* Interface für Informations Strapi Komponenten */
 
@@ -85,7 +86,7 @@ export default async function Hero() {
 
   return (
     <>
-      <div className="h-fit w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.1] absolute z-[-20] flex items-center justify-center flex-col">
+      <div className="h-fit w-screen dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.1] absolute z-[-20] flex items-center justify-center flex-col">
         <section className="h-fit w-screen bg-dotted-spacing-4 bg-dotted-gray-200">
          <HeroImage />
           <div className="sm:h-[35vw] h-[55vh]"></div>
@@ -109,13 +110,13 @@ export default async function Hero() {
             <Iframe
               url="https://www.youtube.com/embed/w50VVpHyACA"
               id=""
-              className="w-96 h-60 md:w-[48rem] md:h-96 rounded-2xl"
+              className="w-96 h-60 md:w-[48rem] md:h-96 rounded-2xl shadow-md"
               display="block"
               position="relative"
             />
           </div>
 
-          <section className="flex flex-col items-center mt-11">
+          <section className="flex flex-col items-center mt-40">
             <div className="flex justify-around items-center w-screen">
               <div className="w-[20vw] h-[2px] bg-black sm:w-[40vw]" />
               <h2 className="text-2xl sm:text-3xl">Informationen</h2>
@@ -171,7 +172,7 @@ export default async function Hero() {
             )}
           </section>
 
-          <section className="flex flex-col items-center mt-11">
+          <section className="flex flex-col items-center mt-40">
             <div className="flex justify-around items-center w-screen">
               <div className="w-[20vw] h-[2px] bg-black sm:w-[40vw]" />
               <h2 className="text-2xl sm:text-3xl">Beiträge</h2>
@@ -181,7 +182,7 @@ export default async function Hero() {
           </section>
         </section>
 
-        <section className="flex flex-col items-center mt-11">
+        <section className="flex flex-col items-center mt-20">
           <div className="flex justify-around items-center w-screen">
             <div className="w-[20vw] h-[2px] bg-black sm:w-[40vw]" />
             <h2 className="text-2xl sm:text-3xl">Termine</h2>
@@ -236,7 +237,7 @@ export default async function Hero() {
               })}
           </div>
         </section>
-
+      
         <div className="w-[90vw] h-[2px] bg-black mb-10 mt-10" />
         <section>
           <div className="grid grid-cols-3">
@@ -263,7 +264,9 @@ export default async function Hero() {
             ></Image>
           </div>
         </section>
+        <Footer />
       </div>
+     
     </>
   );
 }
